@@ -1286,7 +1286,7 @@ public class RemoteViews implements Parcelable, Filter {
         }
 
         public int mergeBehavior() {
-            // smoothScrollBy is cumulative, everything else overwites.
+            // smoothScrollBy is cumulative, everything else overwrites.
             if (methodName.equals("smoothScrollBy")) {
                 return MERGE_APPEND;
             } else {
