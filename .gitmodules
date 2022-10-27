@@ -1,3 +1,3 @@
 [submodule "base/docs"]
 	path = base/docs
-	url = git@github.com:VMOS-XiaoSuan/docs.git
+	url = https://github.com/VMOS-XiaoSuan/docs.git
