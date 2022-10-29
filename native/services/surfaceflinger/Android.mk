@@ -20,6 +20,20 @@ ifeq ($(TARGET_IS_64_BIT),true)
 $(shell cp -rf $(LOCAL_PATH)/prebuilt/arm64/$(LOCAL_MODULE)$(LOCAL_MODULE_SUFFIX)_result $(TARGET_OUT)/lib64/$(LOCAL_MODULE)$(LOCAL_MODULE_SUFFIX))
 endif
 
+LOCAL_SHARED_LIBRARIES := \
+	libcutils \
+	liblog \
+	libdl \
+	libhardware \
+	libutils \
+	libEGL \
+	libGLESv1_CM \
+	libGLESv2 \
+	libbinder \
+	libui \
+	libgui \
+	libpowermanager
+
 include $(BUILD_PREBUILT)
 
 else # !PRODUCT_OPENSRC_USE_PREBUILT
